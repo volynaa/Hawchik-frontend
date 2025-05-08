@@ -1,7 +1,7 @@
 <template lang="pug">
 .title Для животных
 .blockCategories
-	router-link.categories(to="categories?animals=Собака")
+	router-link.categories(to="/categories/cat")
 		.categoriesTitle Для кошек
 	router-link.categories(to="categories?animals=Собака")
 		.categoriesTitle Для собак

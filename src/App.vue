@@ -1,13 +1,16 @@
 <template lang="pug">
 HawHeaderIndex
-HawIndex
+.mainContainer
+	router-view
 </template>
 
 <script setup>
 import HawHeaderIndex from "@/components/header/HawHeaderIndex.vue";
-import HawIndex from "@/components/index/HawIndex.vue";
 </script>
 
 <style scoped>
-
+.mainContainer{
+	display: grid;
+	justify-content: center;
+}
 </style>

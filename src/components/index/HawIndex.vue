@@ -1,10 +1,9 @@
 <template lang="pug">
-.mainContainer
-	HawIndexSectionReadyFood
-	HawIndexSectionVegetables
-	HawIndexSectionMilk
-	HawIndexSectionAnimal
-	HawIndexSectionWater
+HawIndexSectionReadyFood
+HawIndexSectionVegetables
+HawIndexSectionMilk
+HawIndexSectionAnimal
+HawIndexSectionWater
 </template>
 
 <script setup>
@@ -16,8 +15,4 @@ import HawIndexSectionAnimal from "@/components/index/section/HawIndexSectionAni
 </script>
 
 <style scoped>
-.mainContainer{
-	display: grid;
-	justify-content: center;
-}
 </style>

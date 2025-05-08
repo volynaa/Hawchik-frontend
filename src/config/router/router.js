@@ -7,6 +7,23 @@ const router = createRouter({
             name: 'index',
             component: () => import('@/components/index/HawIndex.vue')
         },
+        {
+            path: '/categories',
+            name: 'categories',
+            meta: {
+                breadcrumb: 'Все товары',
+                filter: true,
+            },
+            component: () => import('@/components/categories/HawCategoriesIndex.vue')
+        },
+        {
+            path: '/categories/cat',
+            name: 'categoriesName',
+            meta: {
+                breadcrumb: false
+            },
+            component: () => import('@/components/categories/HawCategoriesIndex.vue')
+        },
     ]
 })
 export default router
