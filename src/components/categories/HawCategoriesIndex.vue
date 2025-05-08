@@ -2,7 +2,10 @@
 h1 Самый сезон
 .categories
 	.goods(v-for="item in listGoods" :key="item")
-		.price {{item.price}}
+		img(:src="item.photo")
+		.containerPrice
+			.price {{item.price}}₽
+			.oldPrice {{item.oldPrice}}₽
 		.name {{item.name}}
 </template>
 
@@ -27,8 +30,42 @@ onMounted(()=> {
 	display: flex;
 	gap: 10px;
 	.goods{
-		width: 214px;
-		height: 306px;
+		display: flex;
+		flex-direction: column;
+		img{
+			max-width: 214px;
+			border-radius: 30px;
+			background: rgba(190, 186, 186, 0.1);
+		}
+		.containerPrice{
+			display: flex;
+			gap: 5px;
+			.price{
+				color: #ee4e2a;
+				font-weight: 600;
+				font-size: 18px;
+			}
+			.oldPrice {
+				position: relative;
+				color: #a1a0a0;
+				font-style: italic;
+				padding-right: 2px;
+				font-size: 14px;
+				margin-top: auto;
+			}
+
+			.oldPrice::after {
+				content: '';
+				position: absolute;
+				top: 60%;
+				left: -2px;
+				right: -2px;
+				height: 1px;
+				background: #ff5252;
+				transform: translateY(-50%) rotate(-5deg);
+				transform-origin: left center;
+			}
+		}
 	}
 }
 </style>
