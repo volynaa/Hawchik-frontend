@@ -27,8 +27,9 @@ onMounted(()=> {
 
 <style scoped>
 .categories{
-	display: flex;
-	gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px 10px;
 	.goods{
 		display: flex;
 		flex-direction: column;
@@ -40,6 +41,7 @@ onMounted(()=> {
 		.containerPrice{
 			display: flex;
 			gap: 5px;
+			margin-top: 10px;
 			.price{
 				color: #ee4e2a;
 				font-weight: 600;

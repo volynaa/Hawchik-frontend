@@ -1,7 +1,6 @@
 <template lang="pug">
 HawHeaderIndex
-.mainContainer
-	router-view
+router-view
 </template>
 
 <script setup>

@@ -1,9 +1,10 @@
 <template lang="pug">
-HawIndexSectionReadyFood
-HawIndexSectionVegetables
-HawIndexSectionMilk
-HawIndexSectionAnimal
-HawIndexSectionWater
+.mainContainer
+	HawIndexSectionReadyFood
+	HawIndexSectionVegetables
+	HawIndexSectionMilk
+	HawIndexSectionAnimal
+	HawIndexSectionWater
 </template>
 
 <script setup>
